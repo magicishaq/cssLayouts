@@ -40,4 +40,44 @@ div img {
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
 
+	.row1::after, .row2::after, .row3::after, .row4::after, .row2point5::after{
+		content: "";
+		display: table;
+		clear: both; 
+	}
+	.row1 article{
+		float: left; 
+		width : 20%; 
+		background-color: rgba(223, 219, 25, 0.719);
+
+	}
+
+	.row2 article, .row2point5 article{
+		/* float: left;  */
+		width: 100%; 
+		background-color: blueviolet;
+	}
+
+	.row3 article{ 
+		float: left; 
+		background-color: limegreen; 
+
+	}
+	.narrow{
+		width :20%;
+		background-color: peru; 
+	}
+	.wide{
+		width: 70%;
+		float: right; 
+		color: lightcyan; 
+	}
+
+	.row4 article {
+		float: left; 
+		width: 100%; 
+		background-color: lightsalmon;
+	}
+
+
 }
