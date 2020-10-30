@@ -7,6 +7,7 @@ ul {
 	padding: 0;
 	margin: 0;
 	border: 1px dotted red;
+	flex-direction: row-reverse; 
 }
 li {
 	border: 1px solid #999;
