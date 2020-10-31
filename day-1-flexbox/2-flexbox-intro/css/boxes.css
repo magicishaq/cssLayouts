@@ -7,8 +7,23 @@ ul {
 	padding: 0;
 	margin: 0;
 	border: 1px dotted red;
-	flex-direction: row-reverse; 
+	/* flex-direction: row;
+	flex-wrap: nowrap;  */
+	/* combination of flex direction and flex wrap */
+	flex-flow: row nowrap; 
+	height: 400px; 
+	align-items: center; 
+	justify-content: space-evenly ;
+
+	 
 }
+.flex2{ 
+	border: 2px dotted blue;
+	 order: 1;
+	/* flex-basis: 100%;   */
+	/* shorthand for flex grow, shrink and basis property */
+	flex : 1 0 50%; 
+ }
 li {
 	border: 1px solid #999;
 	margin: 0.5em;
