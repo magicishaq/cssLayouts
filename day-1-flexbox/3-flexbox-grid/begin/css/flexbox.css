@@ -32,6 +32,31 @@ div img {
 
 /* grid system -- mobile first! */
 
+/* the row class */
+.row{
+	display: flex; 
+	flex-flow: row;
+	flex-flow: row wrap; 
+
+}
+
+[class*="col-"] {
+	margin : 10px 2%; 
+}
+
+.col-1{
+	background-color: #ffc;
+}
+.col-2{
+	background-color: #ff4; 
+}
+.col-3{
+	background-color: #fff;
+}
+
+.col-4{
+	background-color: #f56; 
+}
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
@@ -39,5 +64,20 @@ div img {
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+.col-1{
+	flex: 0 0 20%; 
+}
+.col-2{
+	flex:  0 0 44%; 
+}
+
+.col-3{
+	flex: 0 0 68%; 
+}
+
+.col-4 {
+	flex: 0 0 92% ; 
+}
+
 
 }
