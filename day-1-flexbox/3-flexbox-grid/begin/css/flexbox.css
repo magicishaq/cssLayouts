@@ -67,7 +67,14 @@ div img {
 .col-4{
 	background-color: #f56; 
 }
-
+.reverse{
+	flex-direction: row-reverse; 
+}
+.reverse [class*="col-"] { 
+	/* overrides the margin */
+	margin-left: 2%;
+	margin-right: 2%; 
+}
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
 .col-1-2, .col-2{
