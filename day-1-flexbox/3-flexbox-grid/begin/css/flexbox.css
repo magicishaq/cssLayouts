@@ -41,10 +41,11 @@ div img {
 }
 
 [class*="col-"] {
-	margin : 10px 2%; 
+	margin : 10px 2%;
+	flex: 0 0 92%;  
 }
 
-.col-1{
+.col-1-4 , .col-1-2{
 	background-color: #ffc;
 }
 .col-2{
@@ -54,20 +55,45 @@ div img {
 	background-color: #ff33ff;
 }
 
+.col-3-6 {
+	background-color: #ff32;
+}
+
+.col-6-3{
+	background-color: navajowhite;
+	order: 0; /* resets the order when in desktop */
+}
+
 .col-4{
 	background-color: #f56; 
 }
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
+.col-1-2, .col-2{
+	flex: 0 0 44%; 
+
+}
+.col-1-4{
+flex: 0  0 20%; 
+}
+.col-3{
+flex: 0 0 44% 
+}
+
+.col-4{
+flex: 0 0 92%; 
+}
+
 
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
-.col-1{
+.col-1-4, 
+.col-1-2, .col-6-3{
 	flex: 0 0 20%; 
 }
-.col-2{
+.col-2, .col-3-6{
 	flex:  0 0 44%; 
 }
 
@@ -79,5 +105,13 @@ div img {
 	flex: 0 0 92% ; 
 }
 
+.col-3-6{
+	flex: 0 0 44%; 
+}
+
+.col-6-3{
+	order: -1 
+	/* firstno matter what */
+}
 
 }
