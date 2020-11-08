@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+@media(min-width: 1px){
+    .bgimg{
+        background: url('img/mom-300.jpg') no-repeat; 
+        height: 50px;
+        /* if there is not content in the div, need to set height */
+    }
+}

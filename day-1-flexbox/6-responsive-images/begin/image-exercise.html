@@ -3,12 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link href="img/style.css" rel="stylesheet">
 </head>
 <body>
 	<!-- visit http://scottjehl.github.io/picturefill/ for picturefill source -->
-	<div class="bkgdimg"></div>
-	<div>
-		<img src="img/peace-pie-original.jpg" alt="The original giant peace pie">
-	</div>
+	<div class="bgimg"></div>
+	<h1>Hello world</h1>
+	<picture>
+		<source srcset="img/peace-pie-original.jpg" media="(min-width: 1200px)">
+			<source srcset="img/peace-pie-500.jpg" media="(min-width: 800px)">
+				<!-- the picture tab will show the responsive image depending on the media type -->
+		<img src="img/peace-pie-150.jpg" alt="The original giant peace pie">
+		<!-- fall back to the img tag (default) in this case its mobile -->
+	</picture>
 </body>
 </html>
