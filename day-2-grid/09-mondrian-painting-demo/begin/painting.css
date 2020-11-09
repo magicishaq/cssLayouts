@@ -2,17 +2,27 @@
 .wrapper {
   width: 600px;
   height: 600px;
-  background: url(painting.png) no-repeat;
+  /* background: url(painting.png) no-repeat; */
   /* start of tutorial */
   display: grid; 
-  grid-gap: 10px;
+  grid-gap: 30px 20px; 
+  /* first number is for the rows, second is for the columns */ 
   font-size: 100px; 
+/* creates four rows the dimensions for each of them rows */
+  grid-template-rows: 170px 200px 61px 60px ;
+  /* creates the dimensions for the columns */
+  grid-template-columns: 124px 376px 42px ;
+  background-color: #666;
+
  
 }
 div {
 	border: 1px solid black;
 	background-color: white;
-	opacity: 0.5;
+  /* opacity: 0.5; */
+  display: flex;
+  justify-content: center;
+
 }
 .a {
   grid-row: 1/2; 
@@ -27,23 +37,28 @@ div {
 .c {
   grid-row: 1/3; 
   grid-column: 2/4;
+  background-color: lightcoral;
 
 }
 .d {
 grid-column: 1/2;
-grid-row:3/4 ; 
+grid-row:3/5 ; 
+/* colour styleing */
+color:#fff;
+background-color: skyblue;
 }
 .e {
   grid-column: 2/3 ;
-  grid-row: 3/4; 
+  grid-row: 3/5; 
 }
 .f {
   grid-column: 3/4;
-  grid-row:3/4; 
+  grid-row:3/5; 
 }
 .g {
 	grid-column: 3/4 ;
 grid-row:4/5; 
+background-color: lightyellow;
 }
 
 
